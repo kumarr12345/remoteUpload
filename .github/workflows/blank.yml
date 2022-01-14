@@ -40,5 +40,6 @@ jobs:
           mkdir ~/mydrive
           chmod 775 ~/mydrive/
           rclone --vfs-cache-mode writes mount drive: ~/mydrive &
+          sleep 10
           cd /home/mydrive
           ls
