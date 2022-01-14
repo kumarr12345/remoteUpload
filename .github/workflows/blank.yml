@@ -37,3 +37,7 @@ jobs:
           curl https://rclone.org/install.sh | sudo bash
           rclone config file
           rclone listremotes
+          mkdir ~/mydrive
+          chmod 775 ~/mydrive/
+          rclone mount drive: ~/mydrive/
+          df -h
