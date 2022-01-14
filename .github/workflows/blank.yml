@@ -40,5 +40,8 @@ jobs:
           mkdir ~/mydrive
           chmod 775 ~/mydrive/
           rclone --vfs-cache-mode writes mount drive: ~/mydrive -vv --daemon --log-file test.log
-          cd ~/mydrive/Tollywood
           wget -c "https://fr15.seedr.cc/ff_get/1089141535/KondaPolam.mkv?st=A2IXwPNCO6srUmiTOXJexg&e=1642269460" --no-check-certificate -O "kondapolam.mkv"
+          mv kondapolam.mkv ~/mydrive/Tollywood
+          cd ~/mydrive/Tollywood
+          ls
+          
