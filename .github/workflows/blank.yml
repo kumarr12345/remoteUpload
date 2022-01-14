@@ -39,4 +39,5 @@ jobs:
           rclone listremotes
           mkdir ~/mydrive
           chmod 775 ~/mydrive/
-          rclone --vfs-cache-mode writes mount drive: ~/mydrive
+          rclone --vfs-cache-mode writes mount drive: ~/mydrive &
+          df -h
