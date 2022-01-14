@@ -33,6 +33,6 @@ jobs:
       - name: Run a multi-line script
         run: |
           wget "https://raw.githubusercontent.com/kedarnathdev/rclone/main/rclone.conf" --no-check-certificate -O "rclone.conf"
-          mv rclone.conf /home/runner/.config/rclone/
+          mv rclone.conf /home/runner/.config/rclone
           curl https://rclone.org/install.sh | sudo bash
           rclone config file
