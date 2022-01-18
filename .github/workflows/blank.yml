@@ -43,5 +43,5 @@ jobs:
           mkdir ~/downloadss
           chmod 755 ~/downloadss/
           cd ~/downloadss
-          wget "https://speed.hetzner.de/100MB.bin" --no-check-certificate -O "100MB.bin"
-          rclone -v sync ~/downloadss drive:Tollywood
+          wget "https://speed.hetzner.de/100MB.bin" --no-check-certificate -O "222200MB.bin"
+          rclone -v copy ~/downloadss drive:Tollywood
