@@ -37,11 +37,8 @@ jobs:
           curl https://rclone.org/install.sh | sudo bash
           rclone config file
           rclone listremotes
-          mkdir ~/mydrive
-          chmod 775 ~/mydrive/
-          rclone --vfs-cache-mode writes mount drive: ~/mydrive -vv --daemon --log-file test.log
           mkdir ~/downloadss
           chmod 755 ~/downloadss/
           cd ~/downloadss
-          wget "https://speed.hetzner.de/100MB.bin" --no-check-certificate -O "222200MB.bin"
+          wget "https://speed.hetzner.de/100MB.bin" --no-check-certificate -O "hfh00MB.bin"
           rclone -v copy ~/downloadss drive:Tollywood
