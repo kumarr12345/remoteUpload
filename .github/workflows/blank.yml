@@ -40,6 +40,8 @@ jobs:
           mkdir ~/mydrive
           chmod 775 ~/mydrive/
           rclone --vfs-cache-mode writes mount drive: ~/mydrive -vv --daemon --log-file test.log
-          cd ~/mydrive/Tollywood
-          touch hwloodj.txt
-          touch hi.txt
+          mkdir ~/downloadss
+          chmod 755 ~/downloadss/
+          cd ~/downloadss
+          wget "https://speed.hetzner.de/100MB.bin" --no-check-certificate -O "100MB.bin"
+          rclone -v sync ~/downloadss drive:Tollywood
