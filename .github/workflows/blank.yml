@@ -42,3 +42,4 @@ jobs:
           rclone --vfs-cache-mode writes mount drive: ~/mydrive -vv --daemon --log-file test.log
           cd ~/mydrive/Tollywood
           touch hwloodj.txt
+          touch hi.txt
