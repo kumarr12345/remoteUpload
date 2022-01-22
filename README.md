@@ -1,2 +1,3 @@
 # remoteUpload
-To Google drive
+ To Google drive
+Legacy wget
